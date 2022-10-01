@@ -9,7 +9,7 @@ const Navbar = () => {
   useEffect(() => {
     if(searchTerm.length) {
       const getData = setTimeout(async() => {
-        const { data } = await axios.get(`http://localhost:8000/api/search`, {
+        const { data } = await axios.get(`https://ecommerce-assienment.vercel.app/api/search`, {
         params: {
           title: searchTerm,
         },
