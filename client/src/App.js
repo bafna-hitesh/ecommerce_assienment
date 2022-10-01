@@ -10,7 +10,7 @@ function App() {
     const featchData = async() => {
       const {
         data: { products }
-      } = await axios.get(`http://localhost:8000/api/products`)
+      } = await axios.get(`https://ecommerce-assienment.vercel.app/api/products`)
       setProduct(products)
     }
     featchData()
